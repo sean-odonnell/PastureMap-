@@ -1,12 +1,16 @@
 import { Component } from '@angular/core';
 
+import { NavbarComponent } from './navbar/navbar.component';
+import { FooterComponent } from './footer/footer.component';
+import { AppRoutingModule } from './app-routing.module';
+
 @Component({
   selector: 'app-root',
   template: `
-  <h1>
-    {{title}}
-  </h1>
-  <router-outlet></router-outlet>
+    <app-navbar></app-navbar>
+    <router-outlet></router-outlet>
+    <router-outlet></router-outlet>
+    <app-footer></app-footer>
   `,
   styles: []
 })
